@@ -22,4 +22,9 @@ public class TodoEntity {
     private String title;
 
     private Boolean completed;
+
+    // 👇 Add user identification (email or username from OAuth2)
+    @Column(name = "owner_email", nullable = false)
+    private String ownerEmail;
+
 }
